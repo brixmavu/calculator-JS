@@ -15,6 +15,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 const installButton = document.getElementById('install-button');
+
 installButton.addEventListener('click', (e) => {
     deferredPrompt.prompt();
     deferredPrompt.userChoice.then((choiceResult) => {
