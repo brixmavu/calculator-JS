@@ -6,46 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <title>Simple Calculator</title>
 </head>
 
 <body>
-    <div id="calculator">
-        <p><input type="text" id="display" disabled></p>
-        <p>
-            <button class="button number" onclick="display.value += '1'">1</button>
-            <button class="button number" onclick="display.value += '2'">2</button>
-            <button class="button number" onclick="display.value += '3'">3</button>
-            <button class="button operator" onclick="display.value += '+'">+</button>
-        </p>
-        <p>
-            <button class="button number" onclick="display.value += '4'">4</button>
-            <button class="button number" onclick="display.value += '5'">5</button>
-            <button class="button number" onclick="display.value += '6'">6</button>
-            <button class="button operator" onclick="display.value += '-'">-</button>
-        </p>
-
-        <p>
-            <button class="button number" onclick="display.value += '7'">7</button>
-            <button class="button number" onclick="display.value += '8'">8</button>
-            <button class="button number" onclick="display.value += '9'">9</button>
-            <button class="button operator" onclick="display.value += '*'">*</button>
-        </p>
-
-        <p>
-            <button class="button number" onclick="display.value += '.'">.</button>
-            <button class="button number" onclick="display.value += '0'">0</button>
-            <button class="button operator" onclick="display.value = eval(display.value)">=</button>
-            <button class="button operator" onclick="display.value += '/'">/</button>
-        </p>
-        <p>
-            <button class="button operator" onclick="display.value = ''">C</button>
-            <button class="button operator" onclick="display.value = display.value.slice(0, -1)">
-                &#8592;
-            </button>
-        </p>
-
-    </div>
+    <section>
+        <div class="wrapper">
+            <header class="page-header">Simple Calculator</header>
+            <main class="page-body">
+                <div id="calculator">
+                    <p><input type="text" id="display" disabled></p>
+                    <p>
+                        <button class="button number" onclick="display.value += '1'">1</button>
+                        <button class="button number" onclick="display.value += '2'">2</button>
+                        <button class="button number" onclick="display.value += '3'">3</button>
+                        <button class="button operator" onclick="display.value += '+'">+</button>
+                    </p>
+                    <p>
+                        <button class="button number" onclick="display.value += '4'">4</button>
+                        <button class="button number" onclick="display.value += '5'">5</button>
+                        <button class="button number" onclick="display.value += '6'">6</button>
+                        <button class="button operator" onclick="display.value += '-'">-</button>
+                    </p>
+            
+                    <p>
+                        <button class="button number" onclick="display.value += '7'">7</button>
+                        <button class="button number" onclick="display.value += '8'">8</button>
+                        <button class="button number" onclick="display.value += '9'">9</button>
+                        <button class="button operator" onclick="display.value += '*'">*</button>
+                    </p>
+            
+                    <p>
+                        <button class="button number" onclick="display.value += '.'">.</button>
+                        <button class="button number" onclick="display.value += '0'">0</button>
+                        <button class="button operator" onclick="display.value = eval(display.value)">=</button>
+                        <button class="button operator" onclick="display.value += '/'">/</button>
+                    </p>
+                    <p>
+                        <button class="button operator" onclick="display.value = ''">C</button>
+                        <button class="button operator" onclick="display.value = display.value.slice(0, -1)">
+                            &#8592;
+                        </button>
+                    </p>
+            
+                </div>
+            </main>
+            <footer class="page-footer">
+                <div>©2023 Brix</div> <div><a href="https://github.com/brixmavu/calculator-JS"><img class="github-icon" src="/github-logo.png"></a></div>
+            </footer>
+        </div>
+    </section>
+    
 </body>
 
 </html>
